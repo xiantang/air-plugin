@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.xiantang.airplugin.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.xiantang.airplugin.MyBundle
 
 class MyApplicationService {
 
