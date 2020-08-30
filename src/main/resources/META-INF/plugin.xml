@@ -22,8 +22,8 @@
 <!--            <add-to-group group-id="ToolsMenu" anchor="first"/>-->
 <!--        </action>-->
         <action id="com.github.xiantang.airplugin.action.AirAttachToProcessAction"
-                class="com.github.xiantang.airplugin.action.AirAttachToProcessAction" text="Pop">
-            <add-to-group group-id="ToolsMenu" anchor="first"/>
+                class="com.github.xiantang.airplugin.action.AirAttachToProcessAction" text="Attach to Air">
+            <add-to-group group-id="RunnerActions"/>
         </action>
     </actions>
 </idea-plugin>
