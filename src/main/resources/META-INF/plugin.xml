@@ -6,7 +6,7 @@
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
-
+<!--    <depends>com.intellij.modules.java</depends>-->
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.xiantang.airplugin.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.xiantang.airplugin.services.MyProjectService"/>
@@ -16,4 +16,14 @@
         <listener class="com.github.xiantang.airplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </projectListeners>
+    <actions>
+<!--        <action id="org.intellij.sdk.action.PopupDialogAction" class="com.github.xiantang.airplugin.action.PopupDialogAction"-->
+<!--                text="Pop Dialog Action" description="SDK action example">-->
+<!--            <add-to-group group-id="ToolsMenu" anchor="first"/>-->
+<!--        </action>-->
+        <action id="com.github.xiantang.airplugin.action.AirAttachToProcessAction"
+                class="com.github.xiantang.airplugin.action.AirAttachToProcessAction" text="Pop">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
